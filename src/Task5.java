@@ -16,13 +16,12 @@ public class Task5 {
         {
             String line;
             System.out.println("Reading the line");
-            while ((line = br.readLine()) != null) { // reading the line and displays that line on the screen
-                //System.out.println(line);
+            while ((line = br.readLine()) != null) {
 
                 String[] words = line.split("\\t+");
-                String bankNumber = words[0].trim(); //trim() helps in trimming the character in java can be use only in String
+                String bankNumber = words[0].trim();
                 String bankName = words[1].trim();
-                if (bankNumber.equals(accountNumber)) { //compares accountNumber which user provide with the bankNumber from the file
+                if (bankNumber.equals(accountNumber)) {
                     System.out.println("Bank number : " + bankNumber + " \nBank name is : " + bankName);
                     break;
                 }

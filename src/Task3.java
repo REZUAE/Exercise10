@@ -11,7 +11,7 @@ public class Task3
         {
             do {
                 bajt = fis.read();
-                if ((char) bajt == ' ') bajt = '-'; //replace space with - (dash)
+                if ((char) bajt == ' ') bajt = '-';
                 if (bajt != -1) fos.write(bajt);
             }
             while (bajt != -1);
